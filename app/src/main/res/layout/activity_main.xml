@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround_1"
+    android:clickable="true"
+    android:onClick="setAllValAndSave"
+
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/myGrnEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/myRubleEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/myGrnEditText"
+        app:layout_constraintStart_toStartOf="@+id/myGrnEditText"
+        app:layout_constraintTop_toBottomOf="@+id/myGrnEditText" />
+
+    <EditText
+        android:id="@+id/myDollarEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/myRubleEditText"
+        app:layout_constraintStart_toStartOf="@+id/myRubleEditText"
+        app:layout_constraintTop_toBottomOf="@+id/myRubleEditText" />
+
+    <EditText
+        android:id="@+id/courseGrnEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberSigned|number|numberDecimal"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/courseGrnTextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/courseRubleEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberSigned|number|numberDecimal"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/courseRubleTextView"
+        app:layout_constraintStart_toStartOf="@+id/verticalGuideline" />
+
+    <TextView
+        android:id="@+id/myGrnTextView"
+        style="@style/StyleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/grn"
+        app:layout_constraintBottom_toBottomOf="@+id/myGrnEditText"
+        app:layout_constraintStart_toEndOf="@+id/myGrnEditText"
+        app:layout_constraintTop_toTopOf="@+id/myGrnEditText" />
+
+    <TextView
+        android:id="@+id/allGrnTextView"
+        style="@style/StyleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/grn"
+        app:layout_constraintBottom_toBottomOf="@+id/allGrnMoneyTextView"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuideline"
+        app:layout_constraintTop_toTopOf="@+id/allGrnMoneyTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/myRubleTextView"
+        style="@style/StyleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/ruble"
+        app:layout_constraintBottom_toBottomOf="@+id/myRubleEditText"
+        app:layout_constraintStart_toEndOf="@+id/myRubleEditText"
+        app:layout_constraintTop_toTopOf="@+id/myRubleEditText" />
+
+    <TextView
+        android:id="@+id/myDollarTextView"
+        style="@style/StyleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/dollar"
+        app:layout_constraintBottom_toBottomOf="@+id/myDollarEditText"
+        app:layout_constraintStart_toEndOf="@+id/myDollarEditText"
+        app:layout_constraintTop_toTopOf="@+id/myDollarEditText" />
+
+    <TextView
+        android:id="@+id/courseGrnTextView"
+        style="@style/StyleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/grn"
+        app:layout_constraintBottom_toBottomOf="@+id/courseGrnEditText"
+        app:layout_constraintEnd_toStartOf="@+id/verticalGuideline"
+        app:layout_constraintTop_toTopOf="@+id/courseGrnEditText" />
+
+    <TextView
+        android:id="@+id/courseRubleTextView"
+        style="@style/StyleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/ruble"
+        app:layout_constraintBottom_toBottomOf="@+id/courseRubleEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/courseRubleEditText" />
+
+    <TextView
+        android:id="@+id/getCourseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="getValCourse"
+        android:text="@string/getCourse"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/courseRubleEditText"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/allGrnMoneyTextView"
+        style="@style/StyleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+
+        android:clickable="true"
+
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/allRubleMoneyTextView"
+        app:layout_constraintEnd_toStartOf="@+id/allGrnTextView"
+        app:layout_constraintTop_toBottomOf="@+id/myDollarEditText" />
+
+    <TextView
+        android:id="@+id/allRubleMoneyTextView"
+        style="@style/StyleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/allDollarMoneyTextView"
+        app:layout_constraintEnd_toEndOf="@+id/allGrnMoneyTextView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/allGrnMoneyTextView"
+        app:layout_constraintTop_toBottomOf="@+id/allGrnMoneyTextView" />
+
+    <TextView
+        android:id="@+id/allRubleTextView"
+        style="@style/StyleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ruble"
+        app:layout_constraintBottom_toBottomOf="@+id/allRubleMoneyTextView"
+        app:layout_constraintEnd_toEndOf="@+id/allGrnTextView"
+        app:layout_constraintStart_toStartOf="@+id/allGrnTextView"
+        app:layout_constraintTop_toTopOf="@+id/allRubleMoneyTextView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/allDollarMoneyTextView"
+        style="@style/StyleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/courseGrnEditText"
+        app:layout_constraintEnd_toEndOf="@+id/allRubleMoneyTextView"
+        app:layout_constraintStart_toStartOf="@+id/allRubleMoneyTextView"
+        app:layout_constraintTop_toBottomOf="@+id/allRubleMoneyTextView" />
+
+    <TextView
+        android:id="@+id/allDollarTextView"
+        style="@style/StyleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dollar"
+        app:layout_constraintBottom_toBottomOf="@+id/allDollarMoneyTextView"
+        app:layout_constraintEnd_toEndOf="@+id/allRubleTextView"
+        app:layout_constraintStart_toStartOf="@+id/allRubleTextView"
+        app:layout_constraintTop_toTopOf="@+id/allDollarMoneyTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

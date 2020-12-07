@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Money</string>
+    <string name="grn">Грн</string>
+    <string name="ruble">Руб</string>
+    <string name="dollar">Дол</string>
+    <string name="getCourse">Получить курс</string>
+    <string name="sharedPreference">SHARED_PREF</string>
+    <string name="grn_shared">GRN</string>
+    <string name="ruble_shared">RUBLE</string>
+    <string name="dollar_shared">DOLLAR</string>
+    <string name="course_grn_shared">COURSE_GRN</string>
+    <string name="course_ruble_shared">COURSE_RUBLE</string>
+    <string name="all_grn_shared">ALL_GRN</string>
+    <string name="all_ruble_shared">ALL_RUBLE</string>
+    <string name="all_dollar_shared">ALL_DOLLAR</string>
+
+</resources>
